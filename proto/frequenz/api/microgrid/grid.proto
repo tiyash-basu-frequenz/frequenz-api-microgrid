@@ -1,0 +1,19 @@
+// Contains grid connection point details.
+//
+// Copyright:
+// Copyright 2023 Frequenz Energy-as-a-Service GmbH
+//
+// License:
+// MIT
+
+syntax = "proto3";
+
+package frequenz.api.microgrid.grid;
+
+import "frequenz/api/microgrid/fuse.proto";
+
+// The grid connection point metadata.
+message Metadata {
+  // The fuse metadata at the grid connection point.
+  fuse.Fuse fuse = 1;
+}

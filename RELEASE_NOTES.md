@@ -34,6 +34,15 @@
   This is a more general way of representing category-specific metadata,
   like category-type, and deprecates `Component.type`.
 
+* [Introduced grid max-current](https://github.com/frequenz-floss/frequenz-api-microgrid/pull/38).
+  The API now returns the maximum current that can be drawn from or supplied to
+  a grid connection point. This is returned as a part of the grid connection
+  point's component metadata.
+  This change introduces
+  * a `fuse.Fuse` message, which contains the fuse limits of 3-phase AC lines.
+  * a `grid.Metadata` message, which contains a `Fuse` instance, to represent
+    the fuse limits at a grid-connection-point.
+
 ## Bug Fixes
 
 <!-- Here goes notable bug fixes that are worth a special mention or explanation -->
