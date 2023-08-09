@@ -18,6 +18,10 @@
 - The following gRPC method has been renamed:
   `StreamComponentData` -> `SubscribeComponentData`
 
+- Added support for a new Component category: Relays. These are electromagnetic
+  switches that control circuit breakers in the microgrid, e.g., to connect or
+  disconnect an inverter from the grid.
+
 ## New Features
 
 <!-- Here goes the main new features and examples or instructions on how to use them -->

@@ -455,6 +455,7 @@ message ComponentData {
     battery.Battery battery = 5;
     ev_charger.EvCharger ev_charger = 6;
     sensor.Sensor sensor = 7;
+    relay.Relay relay = 8;
   }
 }
 
