@@ -17,6 +17,11 @@
 - The enum `ComponentBoundsTargetMetric` has been removed in favour of the
   `Metric` enum from `frequenz-api-common`.
 
+- The polarity of reactive power has been changed to follow the IEEE 1459-2010
+  standard definitions. In this standard, positive reactive power is inductive
+  (current is lagging the voltage), and negative reactive power is capacitive
+  (current is leading the voltage).
+
 ## New Features
 
 - The `AddComponentBoundsRequest` message has a field `validity_duration` which
