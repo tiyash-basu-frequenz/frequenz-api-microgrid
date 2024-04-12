@@ -38,4 +38,6 @@
 
 ## Bug Fixes
 
-<!-- Here goes notable bug fixes that are worth a special mention or explanation -->
+- The CI was unable to catch unused imports in the proto file before. This has
+  been fixed by adding a new step to the CI to build using `protoc` with the
+  `--fatal-warnings` flag.
