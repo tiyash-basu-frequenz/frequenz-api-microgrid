@@ -489,6 +489,12 @@ message SetComponentPowerActiveRequest {
   // The output active power level, in watts.
   // -ve values are for discharging, and +ve values are for charging.
   float power = 2;
+
+  // The duration, in seconds, until which the request will stay in effect.
+  // This duration has to be between 10 seconds and 15 minutes (including both
+  // limits), otherwise the request will be rejected.
+  // If not provided, it defaults to 60s.
+  optional uint64 request_lifetime = 3;
 }
 
 // Response message for the RPC `SetComponentPowerActive`.
@@ -512,6 +518,12 @@ message SetComponentPowerReactiveRequest {
   // - positive reactive is inductive (current is lagging the voltage)
   // - negative reactive is capacitive (current is leading the voltage)
   float power = 2;
+
+  // The duration, in seconds, until which the request will stay in effect.
+  // This duration has to be between 10 seconds and 15 minutes (including both
+  // limits), otherwise the request will be rejected.
+  // If not provided, it defaults to 60s.
+  optional uint64 request_lifetime = 3;
 }
 
 // Response message for the RPC `SetComponentPowerReactive`.

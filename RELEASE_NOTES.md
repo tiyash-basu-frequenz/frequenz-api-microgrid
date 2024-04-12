@@ -30,6 +30,12 @@
   can select between 5 seconds, 1 minute, 5 minutes, and 15 minutes. If set to
   `UNSPECIFIED`, the bounds will be valid for a default duration of 5 seconds.
 
+- The request messages `SetComponentPowerActiveRequest` and
+  `SetComponentPowerReactiveRequest` have a new field named `request_lifetime`
+  which allows the user to specify the duration for which the power setpoints
+  are valid. If this field is not specified in a request, the power setpoint
+  will be valid for 60 seconds.
+
 ## Bug Fixes
 
 <!-- Here goes notable bug fixes that are worth a special mention or explanation -->
