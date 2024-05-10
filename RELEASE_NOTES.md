@@ -2,7 +2,8 @@
 
 ## Summary
 
-<!-- Here goes a general summary of what this release is about -->
+In this release, the Microgrid API has been updated to use the latest version
+of `frequenz-api-common`, in addition a few improvements and a bug fix.
 
 ## Upgrading
 
