@@ -6,8 +6,9 @@
 
 ## Upgrading
 
-- This release upgrades `frequenz-api-common` to version `v0.6.0`. Please refer
-  to the [release notes](https://github.com/frequenz-floss/frequenz-api-common/releases/tag/v0.6.0)
+- This release upgrades `frequenz-api-common` to version `v0.6.1`. Please refer
+  to the release notes for [v0.6.0](https://github.com/frequenz-floss/frequenz-api-common/releases/tag/v0.6.0)
+  and [v0.6.1](https://github.com/frequenz-floss/frequenz-api-common/releases/tag/v0.6.1)
   of `frequenz-api-common` for more information.
 
 - A new RPC named `AddComponentBounds` has been introduced, which accepts only
